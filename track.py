@@ -12,8 +12,8 @@ def check_availability(api_key, product_sku):
     return data
 
 def main():
-    api_key = 'API' # Replace with your API key
-    product_sku = '6571577' # Replace with your product SKU
+    api_key = 'API_KEY' # Replace with your API key
+    product_sku = 'SKU' # Replace with your product SKU
 
     while True:
         try:
@@ -22,7 +22,6 @@ def main():
             if online_availability:
                 print("Buy")
                 SMS.send("Best Buy: Product " + product_sku + " Available")
-                print("SMS Sent")
             else:
                 print("Not Available")
         except Exception as e:
