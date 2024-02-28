@@ -15,6 +15,3 @@ python track.py
 ### Requirements
 - Python 3.x
 - vonage package (install via pip)
-
-To install dependencies, run:
-pip install -r requirements.txt
