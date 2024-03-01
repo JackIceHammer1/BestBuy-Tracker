@@ -1,11 +1,10 @@
 import vonage
 
 def send(message):
-    api_key = 'API' # Replace with your API key
-    api_secret = 'API' # Replace with your API secret
-    # Sender and recipient phone numbers
-    sender = 'PHONE' # Your Vonage number
-    recipient = 'PHONE'  # Should be in international format without leading '+'
+    api_key = 'API' # Replace with your Vonage API key
+    api_secret = 'API' # Replace with your Vonage API secret
+    sender = 'PHONE' # Your Vonage phone number
+    recipient = 'PHONE'  # Recipient phone number, international format without leading '+'
 
     # Create a Vonage client
     client = vonage.Client(key=api_key, secret=api_secret)
